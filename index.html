@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <div class="main container-fluid" >
+        <div class="text-center" style="margin-bottom: 20px">
+            <h1>Word Counter App</h1>
+        </div>
+        <div class="row text-center" style="margin-bottom: 8px">
+            <div class="col-lg-4">
+                <h3>Characters</h3>
+                <h2 id="character">0</h2>
+            </div>
+            <div class="col-lg-4">
+                <h3>Words</h3>
+                <h2 id="word">0</h2>
+            </div>
+            <div class="col-lg-4">
+                <h3>Sentences</h3>
+                <h2 id="sentence">0</h2>
+            </div>
+        </div>
+        <div class="col container-md " style="margin-bottom: 10px">
+            <textarea class="col-lg-12" rows="6" id="text-area" placeholder="Whats on your mind.. " oninput="mainFunction()"></textarea>
+        </div>
+        <!-- <div class="container-md">
+            <h3>Words Density</h3>
+            <div class="words-density"></div>
+        </div> -->
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
